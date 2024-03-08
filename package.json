@@ -2,14 +2,20 @@
   "name": "wordle-clone",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "client:dev": "bun --bun nuxt dev src-client",
+    "client:build": "bun --bun nuxt build src-client",
+    "server:dev": "bun --watch src-server/index.ts",
+    "server:start": "NODE_ENV=production bun src-server/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "elysia": "^0.8.17",
+    "elysiajs-nuxt": "^0.3.12"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@nuxt/devtools": "^1.0.8",
+    "bun-types": "latest",
+    "nuxt": "^3.10.3",
+    "typescript": "^5.4.2"
   },
-  "module": "src/index.js"
+  "module": "src-server/index.ts"
 }
