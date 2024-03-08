@@ -8,6 +8,7 @@
     "server:start": "NODE_ENV=production bun src-server/index.ts"
   },
   "dependencies": {
+    "@elysiajs/eden": "^0.8.1",
     "elysia": "^0.8.17",
     "elysiajs-nuxt": "^0.3.12"
   },

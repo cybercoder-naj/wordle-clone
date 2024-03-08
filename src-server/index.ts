@@ -11,3 +11,5 @@ const app = new Elysia()
   .use(elysiaNuxt)
   .get("/api/hi", () => "Hello, Elysia!")
   .listen(8080);
+
+export type Server = typeof app
