@@ -2,7 +2,7 @@ import { Elysia, t } from "elysia";
 import { userAuthModel } from "@models/auth";
 import authMiddleware from "@middlewares/auth";
 
-export default new Elysia({ prefix: '/auth', scoped: true })
+export default new Elysia({ prefix: '/auth' })
   .use(userAuthModel)
   // .schema({
   //   cookie: t.Object({
