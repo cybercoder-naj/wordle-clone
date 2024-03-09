@@ -14,3 +14,4 @@ const app = new Elysia()
   .listen(8080);
 
 export type Server = typeof app
+
