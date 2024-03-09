@@ -2,6 +2,18 @@
 
 A Full-stack TypeScript project, mimicing the Wordle game with friendly leaderboards.
 
+Also view [Server](./src-server/README.md) and [Client](./src-client/README.md) specific READMEs.
+
+- [Tech Stack](#tech-stack)
+- [Roadmap](#roadmap)
+- [Installation](#installation)
+- [Running the project](#running-the-project)
+  - [Development](#development)
+  - [Production](#production)
+- [Testing](#testing)
+- [Authors](#authors)
+- [License](#license)
+
 ## Tech Stack
 
 - [SQLite](https://bun.sh/docs/api/sqlite)
