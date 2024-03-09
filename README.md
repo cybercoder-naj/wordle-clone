@@ -6,6 +6,7 @@ Also view [Server](./src-server/README.md) and [Client](./src-client/README.md) 
 
 - [Tech Stack](#tech-stack)
 - [Roadmap](#roadmap)
+- [Related Blog Posts](#related-blog-posts)
 - [Installation](#installation)
 - [Running the project](#running-the-project)
   - [Development](#development)
@@ -34,6 +35,10 @@ Also view [Server](./src-server/README.md) and [Client](./src-client/README.md) 
 - [ ] Display leaderboard
 - [ ] Add friends and show friend leaderboard
 - [ ] Use GPT/Gemma to get the next word
+
+## Related Blog Posts
+
+- [First Look at ElysiaJS](https://medium.com/codex/first-look-at-elysiajs-84ecf1bc8b38)
 
 ## Installation
 
