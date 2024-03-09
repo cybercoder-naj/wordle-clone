@@ -1,6 +1,6 @@
 import { Elysia, t } from "elysia";
-import { userAuthModel } from "../models/auth";
-import authMiddleware from "../middleware/auth";
+import { userAuthModel } from "@models/auth";
+import authMiddleware from "@middlewares/auth";
 
 export default new Elysia({ prefix: '/auth', scoped: true })
   .use(userAuthModel)

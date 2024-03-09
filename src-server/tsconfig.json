@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@routes/*": ["./routes/*"],
+      "@middlewares/*": ["./middlewares/*"],
+      "@models/*": ["./models/*"]
+    }
+  }
+}

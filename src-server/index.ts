@@ -1,6 +1,6 @@
 import { Elysia } from "elysia";
 import elysiaNuxt from "elysiajs-nuxt";
-import authRoutes from "./routes/auth";
+import authRoutes from "@routes/auth";
 
 const app = new Elysia()
   .onStart(({ server }) => {
