@@ -10,6 +10,7 @@
   "dependencies": {
     "@elysiajs/bearer": "^0.8.0",
     "@elysiajs/eden": "^0.8.1",
+    "@grotto/logysia": "^0.1.1",
     "elysia": "^0.8.17",
     "elysiajs-nuxt": "^0.3.12"
   },

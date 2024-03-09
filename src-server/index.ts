@@ -1,8 +1,10 @@
 import { Elysia } from "elysia";
 import elysiaNuxt from "elysiajs-nuxt";
 import authRoutes from "@routes/auth";
+import { logger } from '@grotto/logysia';
 
 const app = new Elysia()
+  .use(logger({ logIP: true }))
   .onStart(({ server }) => {
     console.log(`Server started at ${server?.url}`);
   })
@@ -14,4 +16,3 @@ const app = new Elysia()
   .listen(8080);
 
 export type Server = typeof app
-
