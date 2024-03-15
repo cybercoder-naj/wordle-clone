@@ -3,6 +3,9 @@ import elysiaNuxt from "elysiajs-nuxt";
 import authRoutes from "@routes/auth";
 import { logger } from '@grotto/logysia';
 
+const api = new Elysia({ prefix: '/api' })
+  .use(authRoutes);
+
 const app = new Elysia()
   .use(logger({ logIP: true }))
   .onStart(({ server }) => {
@@ -12,7 +15,7 @@ const app = new Elysia()
     console.log(`Server stopped at ${server?.url}`);
   })
   .use(elysiaNuxt)
-  .use(authRoutes)
+  .use(api)
   .listen(8080);
 
 export type Server = typeof app

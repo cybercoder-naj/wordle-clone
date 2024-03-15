@@ -8,10 +8,10 @@
     "server:start": "NODE_ENV=production bun src-server/index.ts"
   },
   "dependencies": {
-    "@elysiajs/bearer": "^0.8.0",
-    "@elysiajs/eden": "^0.8.1",
+    "@elysiajs/bearer": "^1.0.0-rc.0",
+    "@elysiajs/eden": "^1.0.0-rc.5",
     "@grotto/logysia": "^0.1.1",
-    "elysia": "^0.8.17",
+    "elysia": "^1.0.0-rc.19",
     "elysiajs-nuxt": "^0.3.12"
   },
   "devDependencies": {

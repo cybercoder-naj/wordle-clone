@@ -4,15 +4,9 @@ import authMiddleware from "@middlewares/auth";
 
 export default new Elysia({ prefix: '/auth' })
   .use(userAuthModel)
-  // .schema({
-  //   cookie: t.Object({
-  //     token: t.Optional(t.String())
-  //   })
-  // })
   .post('login', ({ body: { email, password }, cookie: { token }, set }) => {
     if (email !== "nishant@gmail.com" || password !== "pass1234") {
       set.status = 'Unauthorized'
-
       return "Invalid credentials"
     }
 
@@ -27,6 +21,7 @@ export default new Elysia({ prefix: '/auth' })
   })
   .use(authMiddleware)
   .post('logout', ({ user, cookie: { token }, set }) => {
+    console.table({ user, token })
     if (!user) {
       set.status = 'Unauthorized'
       return "Unauthorized"
