@@ -27,7 +27,7 @@ Also view [Server](./src-server/README.md) and [Client](./src-client/README.md) 
 **Note**: Milestones from "Dummy Authentication" to "JWT Authentication" (exclusive) are server-side only.
 
 - [x] Dummy Authentication 
-- [ ] Setup API route to fetch word of the day
+- [x] Setup API route to fetch word of the day
 - [ ] Bun's SQLite Database
 - [ ] CRON job to change the word everyday
 - [ ] JWT Authentication
